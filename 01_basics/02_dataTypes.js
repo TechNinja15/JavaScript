@@ -62,4 +62,22 @@ const myFunction= function sum() {
     
 }
 
-console.log(typeof anotherId)
+// console.log(typeof anotherId)
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// // There 2 types of memorys
+// 1. Stack
+// 2. Heap
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubeName = "BloodRange15"
+
+let anotherName = myYoutubeName
+anotherName =  "ChaiaurCode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
