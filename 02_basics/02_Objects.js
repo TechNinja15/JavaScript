@@ -98,5 +98,19 @@ const users = [
 // console.log(Object.keys(tinderUser)); // Logs the keys of the tinderUser object
 // console.log(Object.values(tinderUser)); // Logs the values of the tinderUser object
 // console.log(Object.entries(tinderUser)); // Logs the key-value pairs of the tinderUser object
-console.log(tinderUser.hasOwnProperty("isLoggedIn")); // Checks if the property 'isLoggedIn' exists in the tinderUser object
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")); // Checks if the property 'isLoggedIn' exists in the tinderUser object
+
+
+const course = {
+   courseName: "JavaScript",
+   coursePrice: 999,
+   courseInstructor: "Avneesh Kumar Jha",
+}
+
+// course.courseInstructor
+
+const {courseInstructor: CI} = course; // Destructuring to extract courseInstructor and renaming it to CI
+console.log(CI); // Logs the value of courseInstructor, which is "Avneesh Kumar Jha"
+
+
 
