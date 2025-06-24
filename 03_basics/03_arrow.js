@@ -40,11 +40,11 @@ const user =  {
 //     return num1 + num2;
 // }
 
-// const addtwo = (num1, num2) => num1 + num2;
+// const addtwo = (num1, num2) => num1 + num2;  // This will return the sum of num1 and num2
 
-const addtwo = (num1, num2) => (num1 + num2);
+// const addtwo = (num1, num2) => (num1 + num2); // This will return the sum of num1 and num2
 
-const addtwo = (num1, num2) => ({username : "Avneesh"});
+const addtwo = (num1, num2) => ({username : "Avneesh"}); // This will return an object with a property 'username' set to "Avneesh"
 
 console.log(addtwo(2, 3)); // This will print 5
 
