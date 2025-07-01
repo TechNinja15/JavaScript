@@ -21,4 +21,4 @@ colorPicker.addEventListener('input', (e)=>{
     changeBackgroundColor(e.target.value)
 })
 
-changeBackgroundColor('#b92f1f')
+changeBackgroundColor('#030526')
