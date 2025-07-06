@@ -62,9 +62,18 @@
 
 document.querySelector('#images').addEventListener
 ('click', function(e){
-    console.log(e.target.parentNode);
-    let removeIt = e.target.parentNode;
-    removeIt.remove(); //This will remove the clicked element from the DOM
+    console.log(e.target.tagName);
+    if (e.target.tagName === 'IMG') {
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+        
+    };
+    
+
+
+    // let removeIt = e.target.parentNode;
+    // removeIt.remove(); //This will remove the clicked element from the DOM
     
 },false)
         
