@@ -23,8 +23,51 @@
     //     alert("This is an owl");
     // }  //Not a good way to do it
 
-    document.getElementyId('owl').addEventListener('click', function(){
-        alert("owl clicked again");
-    }) 
+    // document.getElementById('owl').addEventListener('click', function(){
+    //     alert("owl clicked again");
+    // }) 
+
+    //a attachEvent() method is used in old versions of IE
+    // jQuery uses the .on() method to attach an event handler to the selected elements.
+    
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul");
+    // }, false); //false is the default value, it means the event will bubble up the DOM tree
+
+    
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("Clicked owl");
+    //     e.stopPropagation(); //This will stop the event from bubbling up to the parent elements
+    // }, false);
+
+    // document.getElementById('google').addEventListener
+    //     ('click',function(e){
+    //         e.preventDefault(); //This will prevent the default action of the link (which is to navigate to the URL)
+    //         e.stopPropagation(); //This will stop the event from bubbling up to the parent elements
+    //         console.log("Clicked google");
+            
+    //     },false)
+
+
+//     document.getElementById('images').addEventListener('click', function(e){
+//     const clickedElement = e.target.parentNode; // get the clicked element
+//     clickedElement.remove(); // remove it from DOM
+// });
+
+
+document.querySelector('#images').addEventListener
+('click', function(e){
+    console.log(e.target.parentNode);
+    let removeIt = e.target.parentNode;
+    removeIt.remove(); //This will remove the clicked element from the DOM
+    
+},false)
+        
+
 </script>
 </html>
