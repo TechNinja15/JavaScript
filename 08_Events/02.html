@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNinja15</title>
+</head>
+<body>
+    <h1>TechNinja15</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("AKJ");
+        
+    // }, 2000) // This will run the function after 2 seconds
+    
+    // const sayAvneesh = function() {
+    //     console.log("Avneesh");
+    // }
+    // setTimeout(sayAvneesh, 2000) // This will run the function after 2 seconds, we can also pass a function as an argument to setInterval or setTimeout
+    
+    // setInterval(function(){
+    //     console.log("AKJ");
+    // }, 2000) // This will run the function every 2 seconds
+
+    document.querySelector('h1').innerHTML = "AKJ"; // This will change the text of the h1 element to "AKJ"
+
+    const changeText = function() {
+        document.querySelector('h1').innerHTML = "Avneesh";
+    }
+
+    const changeMe = setTimeout(changeText, 5000); // This will change the text of the h1 element to "Avneesh" after 5 seconds
+
+    document.getElementById('stop').addEventListener('click', function() {
+        clearTimeout(changeMe); // This will stop the changeText function from being executed after clicking the stop button
+        console.log("Stopped");
+    });
+
+</script>
+</html>

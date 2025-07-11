@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNinja15</title>
+</head>
+<body>
+    <h1>TechNinja15</h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str) {
+        console.log(str, Date.now());
+    }
+    
+
+    let ab = document.getElementById('start').addEventListener('click', function(){
+        const inervalId = setInterval(sayDate, 1000, "hi"); 
+        console.log(inervalId);
+        
+    });   
+    console.log(ab);
+
+    document.getElementById('stop').addEventListener('click', function() {
+       document.querySelector('ab.inervalId').clearInterval(inervalId); // This will stop the setInterval function from being executed after clicking the stop button
+    
+
+       
+    });
+    
+    // clearInterval(inervalId);
+</script>
+</html>
