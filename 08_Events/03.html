@@ -12,24 +12,56 @@
 </body>
 <script>
     const sayDate = function(str) {
-        console.log(str, Date.now());
+        console.log(str, new Date().toLocaleTimeString());
     }
     
 
-    let ab = document.getElementById('start').addEventListener('click', function(){
-        const inervalId = setInterval(sayDate, 1000, "hi"); 
-        console.log(inervalId);
-        
-    });   
-    console.log(ab);
-
-    document.getElementById('stop').addEventListener('click', function() {
-       document.querySelector('ab.inervalId').clearInterval(inervalId); // This will stop the setInterval function from being executed after clicking the stop button
-    
-
-       
+    let intervalid;
+    document.getElementById('start').addEventListener('click', function() {
+        intervalid = setInterval(sayDate , 3000 , "hi");
     });
+    document.getElementById('stop').addEventListener('click', function(){
+        clearInterval(intervalid); // This will stop the interval from running
+        console.log("Stopped");
+    });
+
+    console.log(intervalid);
     
-    // clearInterval(inervalId);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     let intervalId; // Declare it globally so both start and stop buttons can access it
+
+// // Start button
+// document.getElementById('start').addEventListener('click', function () {
+//     intervalId = setInterval(sayDate, 1000, "hi");
+// });
+
+// // Stop button
+// document.getElementById('stop').addEventListener('click', function () {
+//     clearInterval(intervalId); // Stop the interval
+// });
+
+// // Function to call
+// function sayDate(msg) {
+//     console.log(msg + " " + new Date().toLocaleTimeString());
+// }
+
+
+
+   
 </script>
 </html>
