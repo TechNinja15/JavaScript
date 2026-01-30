@@ -97,4 +97,4 @@ function greet() {
 Objects, arrays, and functions are stored by reference, not by value. This means when you assign them to another variable, both variables point to the same object in memory.
 
 ✅ Conclusion
-Data types are the building blocks of any program. In JavaScript, understanding how data is stored and managed is crucial for writing clean and bug-free code. Since JavaScript is loosely typed, it's important to always keep track of the kind of data a variable holds, especially when writing large or complex programs.
+Data types are the building blocks of any program. In JavaScript, we understanding how data is stored and managed is crucial for writing clean and bug-free code. Since JavaScript is loosely typed, it's important to always keep track of the kind of data a variable holds, especially when writing large or complex programs.
